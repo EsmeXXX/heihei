@@ -13,6 +13,6 @@ def index():
 
 @app.route("/main",methods=["GET","POST"])
            def main():
-           return(render_temmplate("imageGPT.htlm"))
+           return(render_temmplate("image_gpt.htlm"))
 if __name__ == "__main__":
   app.run()
