@@ -11,8 +11,8 @@ def index():
              r = request.form.get("name")
              return(render_temmplate("main.htlm",r=r))
 
-@app.route("/main",methods=["GET","POST"])
-           def main():
+@app.route("/image_gpt",methods=["GET","POST"])
+           def image_gpt():
            return(render_temmplate("image_gpt.htlm"))
 if __name__ == "__main__":
   app.run()
