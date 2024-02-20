@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
   return(render_template("index.html"))
 
-@app.route("/main",methods=["GET","POST"]
+@app.route("/main",methods=["GET","POST"])
            def main():
              name = request.form.get("name")
              return(render_temmplate("main.htlm",r=name))
